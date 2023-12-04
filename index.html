@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/mystyle.css">
+</head>
+<body>
+    <div class="container-fluid root">
+        <section>
+            <select class="form-select" id="yearselection"></select>
+            <select class="form-select" id="monthselection"></select>
+        </section>
+        <nav class="navbar navbar-expand-sm bg-body-tertiary">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item border border-2 m-5 p-2 bg-info">
+                    <a class="nav-link" href="" target="calenderFrame" onclick="loadCalender(event)">Training</a>
+                  </li>
+                  <li class="nav-item border border-2 m-5 p-2 bg-info">
+                    <a class="nav-link" href="" target="calenderFrame" onclick="loadCalender(event)">Employee Connect</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <section class="calender">
+            <iframe id="calenderFrame" allow="autoplay" src="" frameborder="1" name="calenderFrame" title="calender"></iframe>
+          </section>
+    </div>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="JS/myscript.js"></script>
+</body>
+</html>
