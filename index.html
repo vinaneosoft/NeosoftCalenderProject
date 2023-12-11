@@ -9,10 +9,22 @@
 </head>
 <body>
     <div class="container-fluid root">
-        <section>
-            <select class="form-select" id="yearselection"></select>
-            <select class="form-select" id="monthselection"></select>
-        </section>
+      <section class="inputForm">
+        <form>
+          <div class="row">
+            <div class="col mb-3">
+              <label for="yearselection" class="form-label">Select Year</label>
+              <select class="form-select" id="yearselection"></select>
+           </div> 
+           <div class="col mb-3">
+              <label for="monthselection" class="form-label">Select Month</label>
+              <select class="form-select" id="monthselection"></select>
+           </div>    
+          </div>         
+        </form>
+      </section>
+      <section>
+        <h4>DEPARTMENTS</h4>
         <nav class="navbar navbar-expand-sm bg-body-tertiary">
             <div class="container-fluid">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,22 +32,26 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item border border-2 m-5 p-2 bg-info">
-                    <a class="nav-link" target="calenderFrame" onclick="loadCalender(event)">Training</a>
+                  <li class="nav-item border border-2 m-4 bg-info">
+                    <a href="" class="nav-link p-4" target="calenderFrame" onclick="loadCalender(event)">Training</a>
                   </li>
-                  <li class="nav-item border border-2 m-5 p-2 bg-info">
-                    <a class="nav-link" target="calenderFrame" onclick="loadCalender(event)">Employee Connect</a>
+                  <li class="nav-item border border-2 m-4 bg-info">
+                    <a href="" class="nav-link p-4" target="calenderFrame" onclick="loadCalender(event)">HRBP Connect</a>
                   </li>
-                  <li class="nav-item border border-2 m-5 p-2 bg-info">
-                    <a class="nav-link" target="calenderFrame" onclick="loadCalender(event)">Engagement</a>
+                  <li class="nav-item border border-2 m-4 bg-info">
+                    <a href="" class="nav-link p-4" target="calenderFrame" onclick="loadCalender(event)">Engagement</a>
                   </li>
                 </ul>
               </div>
             </div>
           </nav>
-          <section class="calender">
-            <iframe id="calenderFrame" allow="autoplay" src="" frameborder="1" name="calenderFrame" title="calender"></iframe>
-          </section>
+        </section>
+        <section id="calendar">
+          <iframe id="calenderFrame" frameborder="1" name="calenderFrame" title="calender"></iframe>
+        </section>
+        <section class="m-4 text-danger">
+          <h4 id="error"></h4>
+        </section>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="JS/myscript.js"></script>
